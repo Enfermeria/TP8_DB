@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CA_TP8_BD1</string>
+    <string name="add">Agregar</string>
+    <string name="del">Eliminar</string>
+    <string name="mod">Modificar</string>
+    <string name="producto">Ingrese el producto</string>
+    <string name="precio">Ingrese el precio</string>
+    <string name="descripcion">Ingrese la descripción</string>
+</resources>

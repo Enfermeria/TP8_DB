@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_producto"
+            android:layout_width="200dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:hint="@string/producto"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_precio"
+            android:layout_width="172dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/precio"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="12dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/descripcion"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="?android:attr/buttonBarStyle"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#E8E08B"
+            android:text="@string/add"
+            android:textColor="#000"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="agregar"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#E8E08B"
+            android:text="@string/del"
+            android:textColor="#000"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="borrar"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_mod"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#E8E08B"
+            android:text="@string/mod"
+            android:textColor="#000"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="modificar"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_productos"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+</LinearLayout>
